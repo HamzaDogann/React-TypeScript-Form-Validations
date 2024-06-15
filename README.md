@@ -41,6 +41,6 @@ To install React Hook Form & Zod, follow these steps:
 ![image](https://github.com/HamzaDogann/React-TypeScript-Form-Validations/assets/93007915/d4804e9e-3b18-4982-97cc-6404320582f4)
 
 
-## For other validation processes that I cannot show, check out the demo site and try everything yourself.
+## For other validation processes that I cannot show, check out the source code and try everything yourself.
 
 
