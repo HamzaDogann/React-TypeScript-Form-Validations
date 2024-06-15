@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(239, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(23, 23, 23);
+}
+
+hr {
+  border: 2px solid rgb(55, 55, 55);
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+
+.register-box {
+  width: 400px;
+  height: auto;
+  padding: 15px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+
+}
+
+.form-box input {
+  height: 30px;
+  border-radius: 6px;
+  border: 2px solid rgb(50, 50, 50);
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: rgba(23, 23, 23, 0.674);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+input:focus {
+  border: 2px solid rgb(42, 162, 108);
+}
+
+input.error {
+  border: 2px solid tomato;
+}
+
+.form-box input[type="radio"] {
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, rgb(4, 80, 194), rgb(19, 175, 89));
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.error-message {
+  font-size: 13px;
+  color: tomato;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+
+/* Success Modal */
+
+.success-modal-box {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(21, 21, 21, 0.612);
+  backdrop-filter: blur(3px);
+  animation: visibilitySuccessModal 3s ease-in-out;
+}
+
+@keyframes visibilitySuccessModal {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.succes-modal {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 14px;
+  color: rgb(76, 169, 76);
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  animation: transformSuccessModal 1s ease-in-out;
+}
+
+@keyframes transformSuccessModal {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  20% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.succes-modal p {
+  margin-left: 10px;
+}
